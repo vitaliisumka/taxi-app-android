@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundActivity"
+    android:orientation="vertical"
+    tools:context=".driver.DriverMapsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/colorBackgroundActivity"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageWay"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="5dp"
+            android:text="GoGo"
+            android:textColor="@color/colorGoGoText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="64dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="23dp"
+            app:srcCompat="@drawable/new_size_car" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textViefw5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageWay"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Driver Sign Up"
+        android:textColor="@color/colorWhite"
+        android:textSize="29sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical" >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhiteGrey"
+            app:counterOverflowTextAppearance="@color/colorWhite"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                app:boxBackgroundColor="@null" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhiteGrey"
+            app:counterOverflowTextAppearance="@color/colorWhite"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:counterTextColor="@color/colorWhiteGrey"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="Name"
+                android:inputType="text"
+                android:textColor="@color/colorWhite" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorWhite"
+            android:textColorHint="@color/colorWhiteGrey"
+            app:counterOverflowTextAppearance="@color/colorWhite"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorWhiteGrey">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorWhite" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorWhite"
+            android:textColorHint="@color/colorWhiteGrey"
+            app:counterOverflowTextAppearance="@color/colorWhite"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorWhiteGrey">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorWhite" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/signUpInDriver"
+            android:onClick="loginSignUpUser"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/roundedbutton"
+            android:paddingBottom="2dp"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/buttonTapToLoginInDriver"
+            android:onClick="toggleLoginSignUp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_border"
+            android:paddingBottom="2dp"
+            android:text="Tap to Login In"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhiteGrey"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
